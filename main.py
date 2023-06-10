@@ -2,11 +2,10 @@ from tkinter import *
 
 
 def calculate_conversion():
-    miles = int(input.get())
-    km = miles*1.60934
-    conversion_label["text"] = km
-    print(km)
-    # return km
+    miles = float(input.get())
+    km = miles*1.609
+    conversion_label["text"] = str(km)
+
 
 # Window
 window = Tk()
@@ -22,7 +21,7 @@ input.grid(column=1, row=0)
 miles_label = Label(text="Miles", font=("Arial", 28))
 miles_label.grid(column=2, row=0)
 
-#Is Equal To
+# Is Equal To
 equal_label = Label(text="is equal to", font=("Arial", 28))
 equal_label.grid(column=0, row=1)
 
